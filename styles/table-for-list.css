@@ -1,0 +1,65 @@
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table__row{
+    border-bottom: 1px solid #CFE0EA;
+}
+
+.table__heading{
+    color: #C43D5B;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.table__data{
+    color: #CFE0EA;
+    font-size: 15px;
+    padding: 8px 0;
+}
+
+.table__heading-arrow-up::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f062";
+    font-size: 20px;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: #CFE0EA;
+    margin-left: 10px;
+}
+
+
+
+.table__heading-arrow-down::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f063";
+    font-size: 20px;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: #CFE0EA;
+}
+
+.sorted::before{
+    color: #FFAA33;
+}
+
+.table__link{
+    text-decoration: none;
+    color: #CFE0EA;
+    transition: 0.3s;
+}
+
+.table__link:hover{
+    color: #FFAA33;
+}

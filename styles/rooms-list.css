@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI";
+}
+
+/*scrollbar if needed*/
+/* width */
+/*::-webkit-scrollbar {
+    width: 10px;
+}
+
+!* Track *!
+::-webkit-scrollbar-track {
+    background: #FFAA33;
+}
+
+!* Handle *!
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+!* Handle on hover *!
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}*/
+
+
+
+
+.rooms__figure{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.rooms__img{
+    width: 100%;
+    height: 100%;
+    vertical-align:bottom;
+    object-fit: cover;
+}
+
+
+.rooms__title{
+    color: #FFAA33;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.rooms__content{
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    /*for scrollbar if needed*/
+    /*max-height: 350px;
+    overflow-y: scroll;
+    padding-right: 15px;*/
+}
+

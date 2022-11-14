@@ -1,0 +1,21 @@
+.breadcrumb-own{
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    border-radius: 4px;
+}
+
+
+.breadcrumb__link{
+    color: #FFAA33;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.breadcrumb__link:hover{
+    text-decoration: none;
+    color: #CFE0EA;
+}
+
+.breadcrumb__icon {
+    margin-right: 5px;
+}
