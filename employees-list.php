@@ -53,7 +53,9 @@ if($poradi)
 }
 
 if ($stmt->rowCount() == 0) {
-    echo "Záznam neobsahuje žádná data";
+    http_response_code(404);
+    echo "<h1>Not found</h1>";
+    die;
 }
 
 ?>

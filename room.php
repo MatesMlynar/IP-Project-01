@@ -28,7 +28,7 @@ $room = $stmt->fetch();
 
 $room_wage = $pdo->query("select AVG(wage) as 'wage' from employee where room = $room_id")->fetch();
 $room_people = $pdo->query("select CONCAT(name,' ',surname,' ') as 'name',employee_id as 'id' from employee where room = $room_id")->fetchAll();
-$room_keys = $pdo->query("select CONCAT(name,' ',surname,' ') as 'name',employee_id as 'id' from employee join ip_3.key on employee.employee_id = ip_3.key.employee where ip_3.key.room = $room_id")->fetchAll();
+$room_keys = $pdo->query("select CONCAT(name,' ',surname,' ') as 'name',employee_id as 'id' from employee join `key` on employee.employee_id = `key`.employee where `key`.room = $room_id")->fetchAll();
 
 ?>
 

@@ -15,7 +15,7 @@ if (!$employee_id) {
 require_once "inc/db_connect.php";
 
 $stmt = $pdo->query("select employee.name as 'name', surname, job, wage, room.name as 'room_name', room.room_id as 'room_id' from employee join room on employee.room = room.room_id where employee.employee_id = $employee_id");
-$employee__keys = $pdo->query("select room.room_id as 'room_id', room.name as 'room_name' from room join ip_3.key on room.room_id = ip_3.key.room where key.employee = $employee_id")->fetchAll();
+$employee__keys = $pdo->query("select room.room_id as 'room_id', room.name as 'room_name' from room join `key` on room.room_id = `key`.room where key.employee = $employee_id")->fetchAll();
 
 if ($stmt->rowCount() === 0)
 {
