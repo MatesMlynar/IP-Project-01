@@ -8,7 +8,8 @@ $room_id = filter_input(
 
 if (!$room_id) {
     http_response_code(400);
-    die("400 Bad request");
+    echo "<h1>400 Bad request</h1>";
+    die();
 }
 
 require_once "inc/db_connect.php";
@@ -19,7 +20,8 @@ $stmt->execute(['room_id' => $room_id]);
 if ($stmt->rowCount() === 0)
 {
     http_response_code(404);
-    die("404 Not found");
+    echo "<h1>404 Not Found</h1>";
+    die();
 }
 
 $room = $stmt->fetch();

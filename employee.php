@@ -8,7 +8,8 @@ $employee_id = filter_input(
 
 if (!$employee_id) {
     http_response_code(400);
-    die("400 Bad requst");
+    echo "<h1>400 Bad request</h1>";
+    die();
 }
 
 require_once "inc/db_connect.php";
@@ -19,7 +20,8 @@ $employee__keys = $pdo->query("select room.room_id as 'room_id', room.name as 'r
 if ($stmt->rowCount() === 0)
 {
     http_response_code(404);
-    die("404 Not found");
+    echo "<h1>404 Not Found</h1>";
+    die();
 }
 
 $employee = $stmt->fetch();
